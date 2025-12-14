@@ -21,8 +21,10 @@ t.pendown()
 x=1.0
 
 def instructions():
+    t.setheading(0)
     t.penup()
     t.goto(-935,580)
+    t.pendown()
     t.write("Use the begining letter of each word to make the shape it can make a hexagon,pentagon,instuctions,triangle,and circle.")
     t.right(90)
     t.penup()
@@ -103,3 +105,4 @@ s.onkeypress(small,"s")
 s.onkeypress(medium,"m")
 s.onkeypress(large,"l")
 s.listen()
+
